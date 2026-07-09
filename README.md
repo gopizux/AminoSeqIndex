@@ -55,34 +55,6 @@ A lightweight, browser-based bioinformatics tool for annotating protein sequence
 | **Compact Grid** | 20 amino acids per row with position numbering and color-coding | Manual annotation, visual inspection |
 | **Table** | Detailed position-by-position breakdown with amino acid properties | Documentation, detailed analysis |
 
-## Quick Start
-
-1. **Download**: Clone this repository or download `index.html`
-   ```bash
-   git clone https://github.com/gopizux/AminoSeqIndex.git
-   ```
-
-2. **Open**: Open `index.html` in any modern browser (Chrome, Firefox, Safari, Edge)
-
-3. **Input**: Paste your protein sequence in FASTA format or plain amino acid string into the input field
-
-4. **Select**: Choose your desired output format from the available options
-
-5. **Export**: View the annotated result, copy to clipboard, or export to DOCX format
-
-## Browser Compatibility
-
-Works on all modern browsers:
-
-- ✅ Chrome (recommended)
-- ✅ Firefox
-- ✅ Safari
-- ✅ Edge
-- ✅ Opera
-- ✅ All Chromium-based browsers
-
-**Requirements**: No external dependencies required. Works offline.
-
 ## Contributing
 
 Bug reports and feature requests are welcome! Please contact:
