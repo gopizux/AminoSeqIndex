@@ -66,14 +66,9 @@ For collaboration inquiries, please reach out via email. Note: This project has 
 
 ## License
 
-This tool is released under a custom license. All rights reserved © 2026 Gopi Malagasi.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-**Key Points**:
-- ✅ Allowed: Educational, research, and personal non-commercial use
-- ❌ Prohibited: Commercial use, redistribution, modification for redistribution
-- ❌ Prohibited: Uploading to other platforms without explicit permission
-
-For the full license text and permission requests, see the [LICENSE](LICENSE) file.
+© 2026 Gopi Malagasi
 
 ## Contact
 

@@ -1,51 +1,21 @@
-# AminoSeqIndex License
+MIT License
 
-Copyright (c) 2026 Gopi Malagasi. All rights reserved.
+Copyright (c) 2026 Gopi Malagasi
 
-## Permitted Uses
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-This repository and its contents are provided for educational, research, and personal use purposes only.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-You ARE allowed to:
-
-1. **Access and Use**: Use this tool/repository for learning, academic research, and personal non-commercial applications.
-2. **Reference**: Reference the material in academic work with proper attribution to Gopi Malagasi.
-3. **Repository Hosting**: View and interact with this repository on authorized code hosting platforms (e.g., GitHub, GitLab) for the purpose of accessing the source code and utilizing the platform's native rendering and preview features.
-
-## Prohibited Uses
-
-You are NOT allowed to:
-
-1. **Redistribute**: Reuse, reproduce, or redistribute any code, content, or visual materials contained in this repository on other platforms or locations.
-2. **Copy Content**: Copy or republish written content, documentation, tutorials, or annotations in whole or in part.
-3. **Commercial Use**: Use this tool or its components for commercial purposes, including but not limited to:
-   - Integration into commercial products or services
-   - Use in for-profit research or consulting
-   - Resale or sublicensing
-4. **Forking and Modification**: Create forks, derivative works, or modify this repository for distribution as your own work.
-5. **Unauthorized Hosting**: Upload or host this content (code, tool context, or documentation) on third-party platforms, repositories, or websites other than the official repository maintained by Gopi Malagasi, without explicit permission.
-
-## Restrictions
-
-- No part of this software may be copied, modified, distributed, or used to create derivative works without prior written permission, with the exception of platform-native interactions (such as GitHub Previews or Issues) required for standard repository usage.
-- Reverse engineering or decompilation of any compiled components is not permitted.
-- The code must remain within the official repository container; you may not extract it to host it yourself elsewhere.
-
-## Permissions and Contact
-
-To request permission for uses not covered above (including collaboration, commercial licensing, or educational institution use), please contact:
-
-- **Primary Contact**: gopizux@gmail.com
-- **Secondary Contact**: vrkrishna70@gmail.com
-
-## Disclaimer
-
-THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-## Attribution
-
-When referencing this work, please cite:
-
-**AminoSeqIndex - Protein Sequence Annotator**  
-Copyright (c) 2026 Gopi Malagasi  
-Contact: gopizux@gmail.com
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
