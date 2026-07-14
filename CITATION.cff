@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+title: AminoSeqIndex
+message: "If you use this software, please cite it using the metadata from this file."
+type: software
+authors:
+  - given-names: Gopi
+    family-names: Malagasi
+    affiliation: "Yogi Vemana University"
+  - given-names: Ramakrishna
+    family-names: Vadde
+    affiliation: "Yogi Vemana University"
+repository-code: "https://github.com/gopizux/AminoSeqIndex"
+url: "https://gopizux.github.io/AminoSeqIndex/"
+license: MIT
+version: "1.0.1"
+date-released: "2026-07-14"
+doi: "10.5281/zenodo.21355340"
+keywords:
+  - protein-sequence-analysis
+  - bioinformatics
+  - web-tool
+  - amino-acid-classification
+  - sequence-indexing
+  - molecular-weight
+  - sequence-export

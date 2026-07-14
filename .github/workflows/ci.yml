@@ -1,0 +1,67 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check HTML validity
+        run: |
+          echo "Checking index.html for basic structural integrity..."
+          if ! grep -q "<!DOCTYPE html>" index.html; then
+            echo "ERROR: Missing DOCTYPE declaration"
+            exit 1
+          fi
+          if ! grep -q "<html" index.html; then
+            echo "ERROR: Missing <html> tag"
+            exit 1
+          fi
+          if ! grep -q "</html>" index.html; then
+            echo "ERROR: Missing closing </html> tag"
+            exit 1
+          fi
+          echo "Basic HTML structure OK"
+
+      - name: Check for broken internal links
+        run: |
+          echo "Checking for broken anchor references..."
+          # Extract all href="#..." and check targets exist
+          grep -oP 'href="#[^"]*"' index.html | sed 's/href="#//;s/"//' | while read anchor; do
+            if ! grep -q "id=\"$anchor\"" index.html && ! grep -q "name=\"$anchor\"" index.html; then
+              echo "WARNING: Anchor #$anchor referenced but not found in document"
+            fi
+          done
+          echo "Internal link check complete"
+
+      - name: Check file size
+        run: |
+          SIZE=$(wc -c < index.html)
+          echo "index.html size: $SIZE bytes"
+          if [ "$SIZE" -gt 100000 ]; then
+            echo "WARNING: index.html exceeds 100 KB — consider optimization"
+          fi
+
+      - name: Validate CITATION.cff
+        run: |
+          if [ -f CITATION.cff ]; then
+            echo "CITATION.cff found"
+            grep -q "doi:" CITATION.cff && echo "DOI present" || echo "WARNING: No DOI in CITATION.cff"
+            grep -q "license:" CITATION.cff && echo "License present" || echo "WARNING: No license in CITATION.cff"
+          else
+            echo "WARNING: CITATION.cff not found"
+          fi
+
+      - name: Check README links
+        run: |
+          if [ -f README.md ]; then
+            echo "Checking README.md for common issues..."
+            grep -q "MIT" README.md && echo "License mentioned in README" || echo "WARNING: MIT license not mentioned in README"
+            grep -q "zenodo" README.md && echo "Zenodo DOI badge found" || echo "WARNING: No Zenodo DOI badge in README"
+          fi
