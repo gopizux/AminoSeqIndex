@@ -74,11 +74,19 @@ No installation. No account. No server calls.
 
 ## Dependencies
 
-AminoSeqIndex is designed as a single-file application. The only external resource is:
+AminoSeqIndex is designed as a single-file application with minimal external dependencies:
 
-- **Google Fonts** (optional): Space Grotesk (headings) and JetBrains Mono (monospace sequence display) loaded from Google Fonts CDN. These degrade gracefully if offline — the tool functions fully without them.
+### Runtime Dependencies (CDN-based)
+- **docx@8.5.0**: Loaded from jsDelivr CDN (`https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.umd.js`) for DOCX file generation. All sequences are processed locally; the library is only used for file export.
+- **Google Fonts** (optional): Space Grotesk (headings) and JetBrains Mono (monospace sequence display). These degrade gracefully if offline — the tool functions fully without them.
 
-All core functionality (HTML, CSS, JavaScript) is bundled in a single `index.html` file (~25 KB) with zero build step or package manager required.
+### Architecture
+All core functionality (HTML, CSS, JavaScript) is bundled in a single `index.html` file (~37 KB) with zero build step or package manager required. No NPM dependencies are needed for development or deployment.
+
+### Privacy & Security
+- All sequence processing occurs **locally in your browser**
+- Sequence data never leaves your machine
+- Tool works offline after initial page load (except DOCX export requires docx library)
 
 ## Browser Compatibility
 
